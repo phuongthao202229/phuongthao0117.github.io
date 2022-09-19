@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: arial, helvetica, sans-serif;
+}
+body{
+    background-color:#0099CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width:100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 60px;
+    background:#fff;
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+
+}
+.container .left_side{
+    position: relative;
+    background: #ff9633c9;
+    padding: 35px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profileText .imgBx
+{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.contactInfo {
+    padding-top: 20px;
+    margin-bottom: 35px;
+    border-top: 5px solid black;
+}
+
+.title{
+    color: rgba(3, 69, 107, 0.993);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.contactInfo ul{
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 2px;
+    cursor: pointer;
+
+}
+
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 30px;
+    color:black;
+}
+
+.contactInfo ul li span{
+    color:#000;
+    font-weight: 600;
+}
+
+.contactEdu ul .icon{
+    display: inline-block;
+    width: 30px;
+    padding:20px 10px 10px 0;
+    font-size: 30px;
+    color: rgba(3, 69, 107, 0.993);
+}
+
+.contactEdu li{
+    list-style-type: none;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.contactEdu h4{
+    color:#000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contactEdu h5{
+    color:red;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.contactLanguage ul li
+{
+    list-style-type:none;
+}
+.contactLanguage ul .icon {
+    display: inline-block;
+    width: 30px;
+    padding:20px 0 10px 0;
+    font-size: 30px;
+    color: rgba(3, 69, 107, 0.993);
+}
+
+.contactLanguage .percent {
+    position: relative;
+    width: 100%;
+    height:12px;
+    background: rgb(150, 23, 23);
+    display: block;
+    margin-top:7px;
+}
+
+.contactLanguage .text{
+    color:#000;
+    font-size: 20px;
+}
+
+.contactLanguage .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: red;
+}
+
+
+.container .right_side{
+    position: relative;
+    background: #fff;
+}
+
+.ProfileMe{
+    position: relative;
+    width: 750px;
+    height: 310px;
+    background: #ff9633c9;
+    border-bottom: 5px solid black;
+}
+
+.ProMe .icon{
+    display: inline-block;
+    width: 30px;
+    padding: 20px 0 0 40px ;  
+    font-size: 25px;
+    color: rgba(3, 69, 107, 0.993);
+
+}
+
+.ProMe .title2{
+  padding: 20px 20px 0 40px ;  
+
+}
+
+.ProMe p {
+    padding:5px 40px 0 40px ;
+    font-size: 22px;
+}
+
+.ProfileMe h4{
+    padding-top: 200px;
+    font-style: italic;
+    font-size: 45px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.ProfileMe .title6{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(107, 9, 9);
+    list-style-type: none;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+.about{
+    padding: 20px 0 0 40px;
+    margin-bottom: 30px;
+}
+
+.about .icon{
+    display: inline-block;
+    width: 30px;
+    padding:20px 0 10px 0;
+    font-size: 25px;
+    color: rgba(3, 69, 107, 0.993);
+
+}
+
+.title2{
+    color: rgba(3, 69, 107, 0.993);
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.about ul li{
+    list-style-type: none;
+}
+
+ h2{
+    color:#000;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+    
+.about:last-child{
+    margin-bottom: 0;
+}
+.aboutSkill{
+    padding-left: 40px;
+}
+.aboutSkill .icon{
+    display: inline-block;
+    width: 30px;
+    padding: 20px 0 20px 0;
+    font-size: 25px;
+    color: rgba(3, 69, 107, 0.993);
+
+}
+
+.aboutSkill .title{
+    font-size: 25px;
+}
+
+.aboutSkill ul li,
+.aboutSkill ul li span{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.aboutSkill .percent {
+    position: relative;
+    width: 95%;
+    height:15px;
+    background: rgb(150, 23, 23);
+    display: block;
+    margin: 10px 10px 10px 10px;
+}
+
+.aboutSkill .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: red;
+}
+
+.contactLike .icon{
+    display: inline-block;
+    width: 30px;
+    padding-top:20px;
+    font-size: 25px;
+    color: rgba(3, 69, 107, 0.993);
+
+}
+.contactLike .title{
+    margin-top: 25px;
+}
+
+.contactLike h4{
+    margin: 7px 0 10px 0;
+    color:#000;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.contactLike .imgBx
+{
+    position: relative;
+    width: 680px;
+    height: 400px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.contactLike .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contactLike:last-child{
+    margin-bottom: 20px;
+}
+
